@@ -1,0 +1,130 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main{
+      
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.inner-div{
+      margin-top: 1.2rem;
+      background-color: antiquewhite;
+      height: 90vh;
+      width: 90vw;
+      border-radius: .8rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+}
+.right-div{
+      width: 45%;
+}
+
+.right-div ol{
+      width: 50%;
+}
+.deletebtn{
+      background-color: orange;
+      color:white;
+      border-radius: .9rem;
+      border: none;
+      padding: .5rem 1rem;
+      cursor: pointer;
+      margin-left: 1rem;
+}
+.deletebtn:hover{
+      background-color: white;
+      color:orange;
+}
+.olstyle {
+      list-style: none; 
+      margin: 0;
+}
+    
+.olstyle li {
+      width: 100%;
+      padding: 0.8rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative; 
+}
+    
+.olstyle li::before {
+      content: counter(list-item) ". "; 
+      counter-increment: list-item; 
+      position: absolute;
+      left: 0;
+}
+    
+
+.olstyle li {
+      padding-left: 20px; 
+      border-bottom: 1px solid #ccc;   
+}
+
+.olstyle li div{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+}
+
+.strike{
+      text-decoration: line-through;
+}
+.inputClass{
+      width: 18px;
+      height: 18px;
+}
+.right-div {
+      padding-top: 3rem;
+      height: 100%;
+      display: flex;
+      justify-content:center;
+      align-items: start;
+}
+.left-div{
+      width: 45%;
+      display: flex;
+      justify-content: center;
+}
+
+.left-div form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+}
+
+.left-div form label{
+      text-align: center;
+      font-size: 1.4rem;
+}
+.left-div form input{
+      font-size: 1.1rem;
+      padding: .5rem 2rem;
+      border: none;
+      border-radius: .8rem;
+}
+.left-div form button{
+      font-size: 1.1rem;
+      padding: .5rem 2rem;
+      background-color: rgb(247, 185, 70);
+      border: none;
+      border-radius: .8rem;
+      cursor: pointer;
+}
+.left-div form button:hover{ 
+      background-color: white;
+      color: rgb(247, 185, 70); 
+}
